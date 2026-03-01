@@ -73,7 +73,7 @@ st.markdown("""
 # --- 1. SETUP LLM E TOOLS ---
 llm = ChatOpenAI(
     model="google/gemini-2.0-flash-001",
-    openai_api_key=OPENROUTER_API_KEY,
+    openai_api_key=st.secrets["OPENROUTER_API_KEY"],
     openai_api_base="https://openrouter.ai/api/v1",
     temperature=0.7
 )
