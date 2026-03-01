@@ -24,8 +24,8 @@ os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
 
 # La tua lista dei misteri
 LISTA_PERSONAGGI = [
-    # "Alessandro Avanzini", "Arnaldo Galli", 
-    # "Uberto Bonetti", "Egisto Malfatti", 
+    "Alessandro Avanzini", "Arnaldo Galli", 
+    "Uberto Bonetti", "Egisto Malfatti", 
     "Francesca Mazzucchi","Marco Petrucci",
     "Christian Grossi", "Gianmarco Madonna","Matteo Raciti",
     "Tommaso Lucchesi"
