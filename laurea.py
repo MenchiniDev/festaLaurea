@@ -7,6 +7,18 @@ from langchain_classic.agents import AgentExecutor
 from langchain_classic.agents import create_react_agent
 import random
 
+
+# In alto nel file, dopo gli import
+import os
+
+if "OPENROUTER_API_KEY" in st.secrets:
+    os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
+    OPENROUTER_API_KEY = st.secrets["OPENROUTER_API_KEY"]
+else:
+    st.error("Manca la chiave segreta nei Secrets di Streamlit! Un si va mia avanti così.")
+    st.stop()
+
+
 # --- CONFIGURAZIONE API ---
 os.environ["OPENROUTER_API_KEY"] = st.secrets["OPENROUTER_API_KEY"]
 
